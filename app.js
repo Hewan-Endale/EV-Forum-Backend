@@ -9,16 +9,16 @@ const cors = require("cors");
 const port = 3004;
 
 // sample to test the server is working
-// app.get(`/`, (req, res)=> {
-// res.send("welcome")
-// })
+app.get(`/`, (req, res)=> {
+res.send("welcome")
+})
 
 // user routes middleware file
 const useRoutes = require("./routes/userRoute");
 const questionRoute = require("./routes/questionRoute");
 const answerRoute = require("./routes/answerRoute");
 
-app.use(cors((origins = ["http://localhost:5173"])));
+app.use(cors());
 
 // json middleware to extract json data
 app.use(express.json());

@@ -4,7 +4,7 @@ const user = process.env.DB_USER;
 const password = process.env.DB_PASS;
 const database = process.env.DB_NAME;
 const connectionLimit = process.env.DB_CONNECTION_LIMIT;
-console.log({host, user, password, database, connectionLimit});
+// console.log({host, user, password, database, connectionLimit});
 const dbconnection = mysql2.createPool({
   user: user,
   database: database,
